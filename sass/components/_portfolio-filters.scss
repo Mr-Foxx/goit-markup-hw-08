@@ -1,0 +1,44 @@
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $color-white;
+    color: $primari-text-color;
+}
+
+.portfolio-button__lyst {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 4px;
+    border: $background-color;
+    cursor: pointer;
+    color: $primari-text-color;
+    background: $background-color;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    transition: background-color 250ms $accent-color, color 250ms $accent-color,
+        box-shadow 250ms $accent-color;
+
+        &:hover, &:focus{
+            color: $color-white;
+                background-color: $accent-color;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+}
+
+.portfolio-button {
+    justify-content: center;
+
+    margin-bottom: 50px;
+    display: flex;
+
+}
+
+.portfolio-button__item {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+

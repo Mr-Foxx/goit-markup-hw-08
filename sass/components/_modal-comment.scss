@@ -1,0 +1,21 @@
+
+
+.comment {
+    padding: 12px 16px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+ textarea:focus {
+    outline: none;
+    background-origin: border-box;
+    border: 1px solid $accent-color;
+    transition: border 250ms $cubic-bezier;
+}
+
+// .form-modal__field textarea:focus {
+//     outline: none;
+//     background-origin: border-box;
+//     border: 1px solid $accent-color;
+//     transition: border 250ms $cubic-bezier;

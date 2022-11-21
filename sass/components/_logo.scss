@@ -1,0 +1,45 @@
+
+.logo {
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $accent-color;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+        color: $accent-color;
+    }
+}
+
+.logo__web {
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+    color: $primari-text-color;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}
+
+.footer__logo {
+    text-decoration: none;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $color-white;
+    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}
+

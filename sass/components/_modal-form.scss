@@ -1,0 +1,74 @@
+
+
+.form-modal__tittle {
+    font-weight: 700;
+    margin: 40px 40px 30px 40px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primari-text-color;
+}
+
+.modal-form {
+    padding: 0;
+    margin: 0;
+    width: 528px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-modal__field {
+    position: relative;
+    margin-bottom: 28px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-modal__field--comment {
+    margin-right: auto;
+    position: absolute;
+
+    top: -22px;
+}
+
+.form-field__list {
+    bottom: 37px;
+
+    position: absolute;
+    margin-right: auto;
+}
+
+.form-modal__field input {
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 10px 20px;
+    padding-left: 42px;
+    margin: 0px;
+
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:focus{
+        transition: border 250ms $cubic-bezier;
+            border: 1px solid $accent-color;
+    }
+
+}
+
+
+.form-modal__field label {
+    margin-bottom: 0px;
+}
+
+label .polici-blue {
+    color: var(--accent-color);
+}
+
+
+

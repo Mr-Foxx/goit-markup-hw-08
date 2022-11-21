@@ -1,0 +1,179 @@
+
+
+.footer {
+    padding: 60px 0;
+    background: $footer-back-color;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-address {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+.footer-addres__item {
+    margin-bottom: 9px;
+}
+
+.footet-addres__top {
+    margin-top: 20px;
+}
+
+.footer-address__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    transition: background-color 250ms$cubic-bezier, color 250ms$cubic-bezier;
+
+    &:hover,    &:focus{
+        color: $accent-color;
+    }
+}
+
+
+
+/* ----------------Приєднуйтесь----------------- */
+.footer-join {
+    margin-left: 70px;
+}
+
+.footer-join__list {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-join__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 20px;
+}
+
+.footer-join__list--item {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.footer-join__link {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 250ms$cubic-bezier, color 250ms$cubic-bezier;
+
+    &:hover, &:focus{
+        background-color: $accent-color;
+    }
+}
+
+
+.footer-join__icon {
+    margin: 12px;
+    width: 20px;
+    height: 20px;
+    fill: $color-white;
+}
+
+/* -----------------Footer Form Підпишіться---------------- */
+.footer-subscribe {
+    margin-left: 103px;
+}
+
+.footer-subscribe__title {
+    width: 207px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $color-white;
+}
+
+.footer-subscribe__list {
+    display: flex;
+}
+
+.footer-subscribe__position {
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer-subscribe__input {
+    padding: 15px 16px;
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+
+    background-color: $footer-back-color;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    transition: border 250ms $cubic-bezier;
+
+    &:focus{
+        outline: none;
+            border-radius: 4px;
+            border: solid 1px $accent-color;
+    }
+}
+
+
+
+.footer-form__button {
+    padding-top: 10px;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+
+    background: $accent-color;
+
+    border-radius: 4px;
+    border: currentColor;
+
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: $color-white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    transition: background-color 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
+
+    &:hover{
+        cursor: pointer;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    }
+}
+
+
+.footer-form__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+
+

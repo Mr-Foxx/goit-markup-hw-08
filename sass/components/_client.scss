@@ -1,0 +1,51 @@
+
+
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $color-white;
+    color: $primari-text-color;
+}
+
+.client__title {
+    color: $primari-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.client__list {
+    padding: 0;
+    margin: 0;
+}
+
+.client__item {
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.client__link {
+    transition: color 250ms$cubic-bezier, border 250ms$cubic-bezier;
+}
+
+.client__icon {
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    fill: $social-icons;
+    border: 1px solid $social-icons;
+    border-radius: 4px;
+    transition: fill 250ms$cubic-bezier, border 250ms$cubic-bezier;
+
+    &:hover{
+        fill: $accent-color;
+            border: solid 1px $accent-color;
+    }
+}
+

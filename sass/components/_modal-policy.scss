@@ -1,0 +1,83 @@
+
+
+.form-policy__icon {
+    border: solid 2px $primari-text-color;
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 4px;
+    left: 49px;
+    width: 16px;
+    height: 15px;
+    fill: $hero-button-color;
+    transition: background-color 250ms$cubic-bezier, border 250ms$cubic-bezier;
+}
+
+.form-modal__field:focus-within {
+    transition: fill 10ms $cubic-bezier;
+    fill: $accent-color;
+}
+
+.form-policy__checkbox:checked+.form-policy__icon {
+    outline: none;
+    border-radius: 4px;
+    background-color: $accent-color;
+    fill: $hero-button-color;
+    border: solid 1px $accent-color;
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.form-policy__checkbox {
+    top: 5px;
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.form-field__button {
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: currentColor;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $hero-button-color;
+
+    transition: background-color 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
+
+    &:hover{
+        background-color: $hero-accent-color;
+            cursor: pointer;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    }
+}
+
+
+.form-modal__icon {
+    margin-left: 14px;
+    margin-top: 10px;
+
+    position: absolute;
+    width: 18px;
+    height: 18px;
+
+    transition: fill 250ms $cubic-bezier;
+}
+
