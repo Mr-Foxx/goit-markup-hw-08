@@ -1,0 +1,42 @@
+
+
+.social-menu{
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+
+
+        &__item {
+            
+            
+           padding: 0px 10px;
+
+            border-right-width: 1px;
+            
+            border-right-style: solid;
+            border-right-color: rgba(33, 33, 33, 0.2);
+
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                border: none;
+            }
+
+            
+                }
+
+        &__link{
+            
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+            
+                color: $accent-color;
+        }
+
+
+    }
+}

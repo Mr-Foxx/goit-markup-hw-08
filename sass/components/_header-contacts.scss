@@ -1,12 +1,33 @@
 
 
 .contact {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    margin-left: auto;
-    display: flex;
+
+    @media screen and (max-width:767px) {
+        display: flex;
+            flex-direction: column-reverse;
+            padding-left: 0;
+
+            &__link-phone{
+                color: $accent-color;
+                font-size: 34px;
+            }
+
+            &__link-mail{
+                color: $second-text-color;
+                font-size: 24px;
+            }
+
+            &__icon--envelope, &__icon--smartphone {
+                display: none;
+            }
+        
+    }
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.02em;
+    // margin-left: auto;
+    // display: flex;
 }
 
 .contact__list:not(:last-child) {
@@ -31,7 +52,7 @@
 
 .contact__link {
     text-decoration: none;
-    color: $second-text-color;
+    // color: $second-text-color;
     transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
 
     &:hover, &:focus{

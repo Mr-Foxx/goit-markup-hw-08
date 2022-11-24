@@ -1,0 +1,27 @@
+
+
+.nav-menu{
+
+    @media screen and (max-width:767px) {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            background-color: $body-background-color;
+
+
+           z-index: 1;
+          top: 0;
+           left: 0;
+             width: 100%;
+    
+            position: absolute;
+            transform: translateY(-100%);
+            transition: transform 1000ms $cubic-bezier;
+
+            &.is-open{
+                transform: translateY(0);
+            }
+    
+        }
+}

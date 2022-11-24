@@ -1,22 +1,28 @@
 
 
 .navigation__link--current {
-    position: relative;
     color: $accent-color;
-    
-    &::after{
-            content: "";
-        
-            position: absolute;
-        
-            top: 46px;
-            display: block;
-            width: 100%;
-        
-            background-color: $accent-color;
-            height: 4px;
-            border-radius: 2px;
 
+    @media screen and (min-width:768px) {
+
+        position: relative;
+            color: $accent-color;
+        
+            &::after {
+                content: "";
+        
+                position: absolute;
+        
+                top: 46px;
+                display: block;
+                width: 100%;
+        
+                background-color: $accent-color;
+                height: 4px;
+                border-radius: 2px;
+        
+            }
     }
+  
 }
 
