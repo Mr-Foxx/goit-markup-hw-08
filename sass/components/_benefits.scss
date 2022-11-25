@@ -1,6 +1,12 @@
 
+    
+
 
 .benefits {
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
+
     padding-top: 0;
     padding-bottom: 94px;
     background-color: $color-white;

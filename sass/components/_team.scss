@@ -1,10 +1,26 @@
 
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: $primari-text-color;
-    background-color: $background-color;
+        background-color: $background-color;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+    
+}
+    
+    
+}
+
+ .image{
+            width: 100%;
+            height: auto;
+            display: block;
 }
 
 .team__title {
@@ -17,18 +33,61 @@
 }
 
 .team__list {
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    height: 428px;
+    margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+
+
+        @media screen and (min-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: -15px;
+        
+            }
+        
+            @media screen and(min-width: 1200px) {
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+    // justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // height: 622px;
 }
 
 .team-card {
-    width: 270px;
+    width: px;
     background: $color-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width:767px) {
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+    }
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 4 * 15px)/2);
+            margin: 15px;
+    
+        }
+    
+        @media screen and(min-width: 1200px) {
+            margin-bottom: 30px;
+            width: calc((100% - 90px)/4);
+            margin-right: 30px;
+    
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
 }
 
 .team-social {

@@ -1,16 +1,37 @@
 .header {
 
-    margin-left: auto;
-        width: 1200px;
+        margin-left: auto;
         margin-right: auto;
-    
-
-    border-bottom: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
 
    
 }
 
+.header__container{
+    @media screen and (max-width:767px) {
+        height: 60px;
+        padding: 16px 0px 16px 15px;
+        
+    }
 
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        
+    }
+}
+
+.header-menu{
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-left: 88px;
+        width: 100%;
+        
+    }
+
+}
 
 //  .header__container {
 //      display: flex;
