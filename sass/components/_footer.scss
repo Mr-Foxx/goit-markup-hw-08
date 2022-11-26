@@ -3,10 +3,40 @@
 .footer {
     padding: 60px 0;
     background: $footer-back-color;
+
+    @media screen and(max-width: 1199px) {
+            text-align: center;
+        }
 }
 
 .footer-container {
-    display: flex;
+
+    @media screen and(min-width: 1200px){
+        display: flex;
+        justify-content: center;
+
+    }
+    
+}
+
+.contact-social{
+    @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-evenly;
+        }
+}
+
+.footer__contact{
+       display: flex;
+        flex-direction: column;
+
+        @media screen and(max-width: 1199px) {
+                margin-bottom: 60px;
+            }
+        
+            @media screen and(min-width: 1200px) {
+                margin-right: 70px;
+            }
 }
 
 .footer-address {
@@ -22,6 +52,11 @@
 
 .footet-addres__top {
     margin-top: 20px;
+    
+}
+
+.address__map{
+    color: $color-white;
 }
 
 .footer-address__link {
@@ -42,12 +77,19 @@
 
 /* ----------------Приєднуйтесь----------------- */
 .footer-join {
-    margin-left: 70px;
+    @media screen and(max-width: 1199px) {
+            margin-bottom: 60px;
+        }
 }
 
 .footer-join__list {
     padding: 0;
     margin: 0;
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-join__title {
@@ -58,6 +100,11 @@
     text-transform: uppercase;
     color: $color-white;
     margin-bottom: 20px;
+
+    @media screen and(max-width:1199px) {
+        text-align: center;
+        
+    }
 }
 
 .footer-join__list--item {
@@ -92,31 +139,31 @@
 
 /* -----------------Footer Form Підпишіться---------------- */
 .footer-subscribe {
-    margin-left: 103px;
+    margin-left: auto;
 }
 
-.footer-subscribe__title {
-    width: 207px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 
-    color: $color-white;
-}
 
 .footer-subscribe__list {
-    display: flex;
+    @media screen and(min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 }
 
 .footer-subscribe__position {
-    width: 358px;
+    width: auto;
     height: 50px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and(min-width: 1200px) {
+            width: 356px;
+            margin-right: 12px;
+        }
 }
 
 .footer-subscribe__input {
@@ -135,13 +182,18 @@
             border-radius: 4px;
             border: solid 1px $accent-color;
     }
+
+       
+    
+        
 }
 
 
 
 .footer-form__button {
     padding-top: 10px;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 50px;
 
@@ -166,6 +218,10 @@
         cursor: pointer;
             box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     }
+
+         @media screen and(max-width: 1199px) {
+             margin-top: 20px;
+         }
 }
 
 
