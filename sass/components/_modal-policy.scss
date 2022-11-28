@@ -1,11 +1,31 @@
+.form-policy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        color: #757575;
+
+        margin-bottom: 30px;
+
+        &__blue {
+            // background-color: red;
+                color: $accent-color;
+            }
+}
 
 .form-policy__icon {
     border: solid 2px $primari-text-color;
     border-radius: 2px;
-    display: inline-block;
-    position: absolute;
+    display: block;
+    // position: absolute;
     margin-top: 4px;
+    margin-right: 8px;
     left: 49px;
     width: 16px;
     height: 15px;

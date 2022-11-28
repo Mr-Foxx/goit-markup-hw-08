@@ -27,7 +27,7 @@
 
             <div class="nav-menu" data-menu>
 
-                <nav>
+                <nav class="nav-container">
                 
                     <ul class="navigation lyst">
                         <li class="navigation__list "><a href="./index.html"
@@ -39,32 +39,35 @@
                 </nav>
                 
                 <!-------Контакти------->
-                <ul class="contact lyst">
-                    <li class="contact__list">
-                
-                        <a class="contact__link contact__link-mail" href="mailto:info@devstudio.com"> <svg class="contact__icon--envelope">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg> info@devstudio.com</a>
-                    </li>
-                
-                    <li class="contact__list">
-                
-                        <a class="contact__link contact__link-phone" href="tel:+380961111111"> <svg class="contact__icon--smartphone">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg> +38 096 111 11 11</a>
-                    </li>
-                </ul>
 
-                <ul class="social-menu">
+                <div class="contact-social">
+                    <ul class="contact lyst">
+                        <li class="contact__list">
+                    
+                            <a class="contact__link contact__link-mail" href="mailto:info@devstudio.com"> <svg
+                                    class="contact__icon--envelope">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg> info@devstudio.com</a>
+                        </li>
+                    
+                        <li class="contact__list">
+                    
+                            <a class="contact__link contact__link-phone" href="tel:+380961111111"> <svg class="contact__icon--smartphone">
+                                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                </svg> +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="social-menu">
+                    
+                        <li class="social-menu__item"> <a class="social-menu__link" href="">Instagram</a> </li>
+                        <li class="social-menu__item"> <a class="social-menu__link" href="">Twitter</a> </li>
+                        <li class="social-menu__item"> <a class="social-menu__link" href="">Facebook</a> </li>
+                        <li class="social-menu__item"> <a class="social-menu__link" href="">LinkedIn</a> </li>
+                    
+                    </ul>
 
-                    <li class="social-menu__item"> <a class="social-menu__link" href="">Instagram</a> </li>
-                    <li class="social-menu__item"> <a class="social-menu__link" href="">Twitter</a> </li>
-                    <li class="social-menu__item"> <a class="social-menu__link" href="">Facebook</a> </li>
-                    <li class="social-menu__item"> <a class="social-menu__link" href="">LinkedIn</a> </li>
-
-
-                </ul>
-
+                </div>
 
 
             </div>
@@ -92,16 +95,14 @@
   <main>
 
     <!-----------------Герой----------------->
-    
-    
-        
-            
+     
         <section class="hero hero__overlay">
             
-            <h1 class="hero__tittle">Ефективні рішення для вашого бізнесу</h1>
-            
+            <div class="container">
+                <h1 class="hero__tittle">Ефективні рішення для вашого бізнесу</h1>
+                <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
+            </div>
 
-            <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal-hero">
 
@@ -154,16 +155,17 @@
                         </div>
                     
 
-                        <div class="form-modal__field">
+                        
                             
-                            <label  for="policy"> 
+                            <label  class="form-policy"> 
                              <input class="form-policy__checkbox" type="checkbox" name="policy" id="policy">
                                 <svg class="form-policy__icon">
                                     <use href="./images/icons-check.svg#icon-icon-check-2"></use>
                                 </svg>
-                                 Погоджуюся з розсилкою та приймаю <a class="polici-blue" href="">Умови договору</a></label>
+                                 <span>Погоджуюся з розсилкою та приймаю <a class="form-policy__blue" href="">Умови договору</a></span>
+                                </label>
                             
-                        </div>
+                        
                     
                         <div class="form-modal__field">
                             <button class="form-field__button" type="submit">Відправити</button>
@@ -196,33 +198,49 @@
         <h2 class="visually-hidden">Особливості роботи</h2>
         <ul class="features__list lyst">
             <li class="features__item">
-                <svg class="features__icon">
-                    <use href="./images/symbol-defs.svg#icon-antenna"></use>
-                </svg>
+                <div class="features__icon">
+                    <svg class="features__svg" width="70px" height="70px">
+                        <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                    </svg>
+
+                </div>
+               
                 <h3  class="features__title">УВАГА ДО ДЕТАЛЕЙ </h3>
                 <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
 
             <li class="features__item">
-                <svg class="features__icon">
-                    <use href="./images/symbol-defs.svg#icon-clock"></use>
-                </svg>
+                <div class="features__icon">
+                    <svg class="features__svg" width="70px" height="70px">
+                        <use href="./images/symbol-defs.svg#icon-clock"></use>
+                    </svg>
+
+                </div>
+               
                 <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
                 <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
 
             <li class="features__item">
-                <svg class="features__icon">
-                    <use href="./images/symbol-defs.svg#icon-diagram"></use>
-                </svg>
+                <div class="features__icon">
+                    <svg class="features__svg" width="70px" height="70px">
+                        <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                    </svg>
+
+                </div>
+               
                 <h3 class="features__title">ПЛАНУВАННЯ</h3>
                 <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
 
             <li class="features__item">
-                <svg class="features__icon">
-                    <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-                </svg>
+                <div class="features__icon">
+                    <svg class="features__svg" width="70px" height="70px">
+                        <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                    </svg>
+
+                </div>
+                
                 <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                 <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
@@ -239,7 +257,7 @@
 
         <div class="container">
 
-        <h2 class="benefits__title ">Чим ми займаємося</h2>
+        <h2 class="benefits__title tittle-h2">Чим ми займаємося</h2>
 
         <ul class="benefits__list lyst">
             <li class="benefits__item">
@@ -269,7 +287,7 @@
 
         <div class="container">
 
-        <h2 class="team__title">Наша команда</h2>
+        <h2 class="team__title tittle-h2">Наша команда</h2>
         <ul class="team__list lyst">
             <li class="team-card">
                 <img class="image" src="./images/ihor.jpg" alt="Ігор Дем'яненко Product Designer" width="270">
@@ -426,7 +444,7 @@
 
     <section class="client ">
         <div class="container">
-     <h2 class="client__title">Постійні клієнти</h2>
+     <h2 class="client__title tittle-h2">Постійні клієнти</h2>
 
      <ul class="client__list">
 

@@ -5,17 +5,12 @@
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
-
-        margin: 64px 0px 48px 0px;
+        // margin: 64px 0px 48px 0px;
 
 
         &__item {
-            
-            
            padding: 0px 10px;
-
             border-right-width: 1px;
-            
             border-right-style: solid;
             border-right-color: rgba(33, 33, 33, 0.2);
 
@@ -26,7 +21,7 @@
                 border: none;
             }
 
-            
+        
                 }
 
         &__link{
@@ -35,8 +30,8 @@
                 font-size: 18px;
                 line-height: 22px;
                 letter-spacing: 0.02em;
-            
                 color: $accent-color;
+                text-decoration: none;
         }
 
 
