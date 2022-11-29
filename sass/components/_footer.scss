@@ -78,13 +78,26 @@
 }
 
 .footer-join__list {
-    padding: 0;
-    margin: 0;
-    padding-left: 0;
+    @media screen and (max-width:1199px) {
+        padding: 0;
+            margin: 0;
+            padding-left: 0;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+    }
+    
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @media screen and (min-width:1200px) {
+        padding: 0;
+            margin: 0;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+        
+    }
 }
 
 .footer-join__title {
@@ -154,6 +167,13 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (min-width:768px) {
+            margin-right: auto;
+                margin-left: auto;
+                display: flex;
+                width: 450px;
+    }
 
     @media screen and(min-width: 1200px) {
             width: 356px;

@@ -129,10 +129,16 @@
 }
 
 .contact-social {
-    @media screen and (min-width:768px) {
-        // display: flex;
-        // justify-content: space-evenly;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        justify-content: space-evenly;
         margin-left: auto;
+        
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        margin-left: auto ;
         
     }
 }
