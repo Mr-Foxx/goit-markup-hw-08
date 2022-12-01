@@ -101,7 +101,7 @@
     @media screen and (min-width:768px) {
         color: #757575;
         font-size: 12px;
-            line-height: 14px;
+            line-height: 1.16;
             letter-spacing: 0.02em;
             display: flex;
             
@@ -115,8 +115,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            font-weight: 500;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
         }
-    text-decoration: none;
+        text-decoration: none;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
