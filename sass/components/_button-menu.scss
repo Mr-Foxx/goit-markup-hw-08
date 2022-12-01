@@ -1,5 +1,6 @@
 
 .menu-button{
+    
     @media screen and (max-width:767px) {
         position: absolute;
         z-index: 1;
@@ -14,11 +15,21 @@
         &__svg{
             fill: currentColor;
 
+        
         }
 
-        &:hover, &:focus{
+        // &:hover, &:focus{
+        //     color: $accent-color;
+            
+            
+        // }
+        .icon-menu:hover, .icon-menu:focus{
             color: $accent-color;
         }
+        .icon-close:hover, .icon-close:focus{
+            color: $accent-color;
+        }
+        
 
         .icon-close{
             display: none;
@@ -27,6 +38,8 @@
           &.is-open .icon-close {
 
              display: block;
+            // color: $accent-color;
+             
               }
 
         &.is-open .icon-menu{

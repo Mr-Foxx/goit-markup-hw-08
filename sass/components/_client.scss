@@ -59,7 +59,7 @@
 
     transition: color 250ms$cubic-bezier, border 250ms$cubic-bezier;
 
-        padding: 16px 32px;
+        // padding: 16px 32px;
         
         
         fill: $social-icons;
@@ -80,7 +80,7 @@
 
     &:hover{
         fill: $accent-color;
-            border: solid 1px $accent-color;
+            // border: solid 1px $accent-color;
     }
 }
 
