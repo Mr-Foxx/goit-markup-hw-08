@@ -109,30 +109,33 @@
         
     }
     
-        
+   @media screen and(min-width: 1200px) {
+       display: flex;
+       justify-content: center;
+       align-items: center;
 
-    @media screen and(min-width: 1200px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 1.14;
+       letter-spacing: 0.02em;
+   }
 
-            font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.02em;
-        }
-        text-decoration: none;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        line-height: 14px;
-        letter-spacing: 0.02em;
-        
-    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+   text-decoration: none;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   line-height: 14px;
+   letter-spacing: 0.02em;
 
-    &:hover, &:focus{
-        color: $accent-color;
-    }
+   transition: background-color 250ms $cubic-bezier,
+   color 250ms $cubic-bezier;
+
+   &:hover,
+   &:focus {
+       color: $accent-color;
+   }
+
+  
 
 }
 
